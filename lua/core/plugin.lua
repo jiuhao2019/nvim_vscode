@@ -13,23 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
     "godlygeek/tabular",
-	{
-		"mbbill/undotree",
-		lazy = true,
-		cmd = { "UndotreeToggle" },
-		keys = {
-			{ "<F5>", "<esc>:UndotreeToggle<CR>", desc = "toggle undotree" },
-		},
-	},
 	"lfv89/vim-interestingwords",
-	{
-		"vim-autoformat/vim-autoformat",
-		lazy = true,
-		cmd = { "Autoformat" },
-		keys = {
-			{ "<leader>a", "<esc>:Autoformat<CR>", desc = "autoformat" },
-		},
-	},
 	{
 		"smoka7/hop.nvim",
 		version = "*",
