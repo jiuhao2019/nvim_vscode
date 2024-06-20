@@ -1,5 +1,2 @@
-require('plugin-config.autoformat')
-require('plugin-config.fern')
 require('plugin-config.interestingwords')
 require('plugin-config.undotree')
-require('plugin-config.windows')

@@ -69,32 +69,4 @@ set notimeout
 set ttimeout
 set ttimeoutlen=10
 set updatetime=100
-let g:python3_host_prog = "/usr/bin/python3"
 ]])
--- -------------------------------------------
-vim.cmd([[
-set noautochdir
-"刷新ctag
-set tags=tags;
-function! UpdateCtags()
-let curdir=getcwd()
-while !filereadable("./tags")
-    cd ..
-    if getcwd() == "/"
-        break
-        endif
-        endwhile
-        if filewritable("./tags")
-            !rm tags
-            !ctags -R  --langmap=c:+.h --languages=c --links=yes --c-kinds=+p --fields=+iaS --extras=+qF
-            endif
-            execute ":cd " . curdir
-            endfunction
-            ]])
--- -------------------------------------------
-vim.api.nvim_create_autocmd({ "BufEnter" }, {
-	pattern = "*",
-	callback = function()
-		vim.diagnostic.disable()
-	end,
-})
