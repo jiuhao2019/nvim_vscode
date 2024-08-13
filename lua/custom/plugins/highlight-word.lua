@@ -1,0 +1,3 @@
+return {
+	"leisiji/interestingwords.nvim",
+}
