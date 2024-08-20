@@ -21,16 +21,11 @@ return {
 			require("which-key").setup()
 
 			require("which-key").add({
-				{ "<leader>s", "<cmd>HopChar1MW<cr>", desc = "Easymotion" },
+				{ "<leader>h", "<cmd>HopChar1MW<cr>", desc = "Easymotion" },
 
-				{ "<leader>d", group = "Diff" },
-				{ "<leader>dt", "<cmd>diffthis<cr>", desc = "Diff this" },
-				{ "<leader>dT", "<cmd>diffoff<cr>", desc = "Diff off" },
 				{ "<leader>k", "<cmd>Interestingwords --toggle<cr>", desc = "Highlight" },
 				{ "<leader>K", "<cmd>Interestingwords --remove_all<cr>", desc = "Unhighlignt" },
 				{ "<leader>u", "<cmd>UndotreeToggle<cr>", desc = "Undotree" },
-
-				{ "<leader>l", "<cmd>Lazy<cr>", desc = "Lazy plugin manager" },
 			})
 		end,
 	},
